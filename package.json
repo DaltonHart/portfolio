@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio site for Dalton Hart",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DaltonHart/portfolio.git"
+  },
+  "keywords": [
+    "portfilio"
+  ],
+  "author": "dalton hart daltonvaren@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaltonHart/portfolio/issues"
+  },
+  "homepage": "https://github.com/DaltonHart/portfolio#readme"
+}
