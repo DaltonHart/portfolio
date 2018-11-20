@@ -10,5 +10,12 @@ body{
     overflow: hidden;
     display: flex;
 }
+.hidden {
+    display: none;
+}
 @import 'partials/header';
 @import 'partials/main';
+@import 'partials/landing';
+@import 'partials/about';
+@import 'partials/projects';
+@import 'partials/contact';

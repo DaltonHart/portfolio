@@ -5,6 +5,8 @@ header {
     width: 5vw;
     height: 100vh;
     background-color: grey;
+    position: fixed;
+    z-index: 20;
     img {
         width: 100%;
         grid-row: 1/2;
@@ -19,6 +21,11 @@ header {
         padding: 0;
         li {
             height: 25%;
+            
         }
+    }
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
