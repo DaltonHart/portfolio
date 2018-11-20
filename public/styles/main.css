@@ -2,4 +2,43 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+header {
+  display: grid;
+  grid-template-rows: repeat(12, 8.33%);
+  grid-template-columns: 1 100%;
+  width: 5vw;
+  height: 100vh;
+  background-color: grey;
+}
+header img {
+  width: 100%;
+  grid-row: 1/2;
+}
+header nav {
+  grid-row: 5/9;
+}
+header ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+header ul li {
+  height: 25%;
+}
+
+main {
+  width: 95vw;
+  height: 100vh;
+  background-color: aqua;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+header {
+    display: grid;
+    grid-template-rows: repeat(12, 8.33%);
+    grid-template-columns: 1 100%;
+    width: 5vw;
+    height: 100vh;
+    background-color: grey;
+    img {
+        width: 100%;
+        grid-row: 1/2;
+    }
+    nav {
+        grid-row: 5/9;
+    }
+    ul {
+        height: 100%;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        li {
+            height: 25%;
+        }
+    }
+}
