@@ -1,4 +1,84 @@
 #about{
     height: 100vh;
-    background-color: yellow;
+    background-image: url(../images/about.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    font-family: $body-font;
+    display: flex;
+    flex-flow: row-reverse;
+    #about-main{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        height: 100vh;
+        width: 50%;
+        h1,h2{
+            font-family: $header-font;
+            text-align: right;
+            color: $game-color;
+            margin: .3em;
+            padding-right: .3em;
+        }
+        h1{
+            font-size: 1.7em;
+            padding-left: 20%;
+        }
+        h2{
+            margin-top: 2em;
+            font-size: 1.75em;
+            filter: grayscale(40%);
+        }
+        hr {
+            display: block;
+            height: 1px;
+            width: 70%;
+            border: 0;
+            margin-right: 0;
+            border-top: .3em solid $game-color;
+            filter: grayscale(40%);
+            padding: 0;
+        }
+    }
+    #fav-stack{
+        margin-right: .3em;
+        padding-right: .3em;
+        padding-left: 20%;
+        text-align: right;
+    }
+    #stacks{
+        margin-right: .3em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-left: 20%;
+        text-align: right;
+        li{
+            list-style: none;
+        }
+        
+        .lists{
+            padding: .5em;
+        }
+    }
+    #social {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        a{
+            margin: auto .5em;
+            &:hover{
+                opacity: .5;
+            }
+        }
+        i{
+            font-size: 2em;
+            color: $game-color;
+        }
+        p{
+            font-family: $header-font;
+            font-size: 1.5em;
+        }
+    }
 }
+

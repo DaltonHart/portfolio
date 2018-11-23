@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dalton Hart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="vender/animate.css">
     <link rel="stylesheet" href="vender/morphist/dist/morphist.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="vender/morphist/dist/morphist.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous" defer></script>
+    <script src="vender/morphist/dist/morphist.min.js" defer></script>
+    <script src="vender/jquery.scrollify.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 </head>
+
 <body>
     <header class="hidden">
         <img src="images/logo.png" alt="logo">
@@ -29,39 +32,96 @@
         </nav>
     </header>
     <main>
-        <section id="landing">
-                <div class="fullscreen-video-wrap">
-                    <video src="http://localhost:8000/images/typing.mp4" autoPlay="true" loop="true" muted="true">
-                    </video>
-                </div>
-                <div class="overlay">
-                </div>
-                <div class="overlay2">
-                </div>
-                <div class="overlayContent">
-                    <h2>My name is Dalton.</h2>
-                    <h3>And I am a </h3>
-                    <span id="js-rotating" class="card">
-                        <span id="web">Web</span>
-                        <span id="front-end">Front-End</span>
-                        <span id="back-end">Back-End</span>
-                        <span id="game">Game</span>
-                    </span>
-                    <h1>DEVELOPER</h1>
-                    <a id="contact-button" href="#contact">Contact Me</a>
+        <section id="landing" class="scroll">
+            <div class="fullscreen-video-wrap">
+                <video src="http://localhost:8000/images/typing.mp4" autoPlay="true" loop="true" muted="true">
+                </video>
+            </div>
+            <div class="overlay">
+            </div>
+            <div class="overlay2">
+            </div>
+            <div class="overlayContent">
+                <h2>My name is Dalton.</h2>
+                <h3>And I am a </h3>
+                <span id="js-rotating" class="card">
+                    <span id="web">Web</span>
+                    <span id="front-end">Front-End</span>
+                    <span id="back-end">Back-End</span>
+                    <span id="game">Game</span>
+                </span>
+                <h1>DEVELOPER</h1>
+                <a id="contact-button" href="#contact">Contact Me</a>
 
-                    <div class="container">
-                            <div class="chevron"></div>
-                            <div class="chevron"></div>
-                            <div class="chevron"></div>
-                            <span class="text">Scroll down</span>
-                          </div>
+                <div class="container">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <span class="text">Scroll down</span>
                 </div>
+            </div>
         </section>
-        <section id="about"></section>
-        <section id="projects"></section>
-        <section id="contact"></section>
+        <section id="about" class="scroll">
+            <section id="about-main">
+                <h2>Dalton Hart</h2>
+                <h1>SanFransico based Developer focused on web optimization and restful api. Loves to build in new
+                    technologies.</h1>
+                <hr>
+                <p id="fav-stack"><strong>Favorite Tech Stack at the moment:</strong> React, MongoDB, Node.js, Express
+                    (MERN)</p>
+                <section id="stacks">
+                    <div class="lists">
+                        <p>Current Languages:</p>
+                        <ul>
+                            <li>HTML,CSS,Javascript</li>
+                            <li>Ruby,Python</li>
+                            <li>C#,C/C++</li>
+                            <li>Swift</li>
+                        </ul>
+                    </div>
+                    <div class="lists">
+                        <p>Current Frameworks:</p>
+                        <ul>
+                            <li>React, React Native</li>
+                            <li>Angular, Vue.js</li>
+                            <li>Meteor</li>
+                            <li>Django</li>
+                            <li>Ruby on Rails</li>
+                            <li>Node.js</li>
+                            <li>Jquery</li>
+                        </ul>
+                    </div>
+                    <div class="lists">
+                        <p>Current Databases:</p>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Mongod</li>
+                            <li>MySQL</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="social" >
+                    <p>Contect with me!</p>
+                    <a href="https://www.linkedin.com/in/dalton-hart/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/DaltonHart" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Captillfated" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/DaltonJHart" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </section>
+            </section>
+        </section>
+        <section id="projects" class="scroll"></section>
+        <section id="contact" class="scroll"></section>
     </main>
-    
+
 </body>
+
 </html>

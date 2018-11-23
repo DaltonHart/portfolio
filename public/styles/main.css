@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Teko:400,600");
+@import url("https://fonts.googleapis.com/css?family=Bitter");
 * {
   box-sizing: border-box;
 }
@@ -89,6 +90,7 @@ main {
   top: 0;
   left: 0;
   background: linear-gradient(#1f202e, #f53e3e);
+  filter: grayscale(40%);
   opacity: 0.5;
   z-index: 10;
 }
@@ -239,7 +241,85 @@ main {
 
 #about {
   height: 100vh;
-  background-color: yellow;
+  background-image: url(../images/about.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  font-family: "Bitter", serif;
+  display: flex;
+  flex-flow: row-reverse;
+}
+#about #about-main {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  height: 100vh;
+  width: 50%;
+}
+#about #about-main h1, #about #about-main h2 {
+  font-family: "Teko", sans-serif;
+  text-align: right;
+  color: #e09c43;
+  margin: 0.3em;
+  padding-right: 0.3em;
+}
+#about #about-main h1 {
+  font-size: 1.7em;
+  padding-left: 20%;
+}
+#about #about-main h2 {
+  margin-top: 2em;
+  font-size: 1.75em;
+  filter: grayscale(40%);
+}
+#about #about-main hr {
+  display: block;
+  height: 1px;
+  width: 70%;
+  border: 0;
+  margin-right: 0;
+  border-top: 0.3em solid #e09c43;
+  filter: grayscale(40%);
+  padding: 0;
+}
+#about #fav-stack {
+  margin-right: 0.3em;
+  padding-right: 0.3em;
+  padding-left: 20%;
+  text-align: right;
+}
+#about #stacks {
+  margin-right: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-left: 20%;
+  text-align: right;
+}
+#about #stacks li {
+  list-style: none;
+}
+#about #stacks .lists {
+  padding: 0.5em;
+}
+#about #social {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+#about #social a {
+  margin: auto 0.5em;
+}
+#about #social a:hover {
+  opacity: 0.5;
+}
+#about #social i {
+  font-size: 2em;
+  color: #e09c43;
+}
+#about #social p {
+  font-family: "Teko", sans-serif;
+  font-size: 1.5em;
 }
 
 #projects {
