@@ -8,31 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="vender/animate.css">
-    <link rel="stylesheet" href="vender/morphist/dist/morphist.css">
+    <link rel="stylesheet" href="vendor/animate.css">
+    <link rel="stylesheet" href="vendor/morphist/dist/morphist.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous" defer></script>
-    <script src="vender/morphist/dist/morphist.min.js" defer></script>
-    <script src="vender/jquery.scrollify.js" defer></script>
+    <script src="vendor/morphist/dist/morphist.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 </head>
 
 <body>
-    <header class="hidden">
+    <header class="">
         <img src="images/logo.png" alt="logo">
         <nav>
-            <ul>
-                <li><a href="#landing">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Past Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="navbar">
+                <a href="#landing">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Past Work</a>
+                <a href="#contact">Contact</a>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="landing" class="scroll">
+    <main id="fullpage">
+        <section id="landing" class="section">
             <div class="fullscreen-video-wrap">
                 <video src="http://localhost:8000/images/typing.mp4" autoPlay="true" loop="true" muted="true">
                 </video>
@@ -61,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="scroll">
+        <section id="about" class="section">
             <section id="about-main">
                 <h2>Dalton Hart</h2>
                 <h1>SanFransico based Developer focused on web optimization and restful api. Loves to build in new
@@ -118,8 +117,8 @@
                 </section>
             </section>
         </section>
-        <section id="projects" class="scroll"></section>
-        <section id="contact" class="scroll"></section>
+        <section id="projects" class="section"></section>
+        <section id="contact" class="section"></section>
     </main>
 
 </body>
