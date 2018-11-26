@@ -1,4 +1,45 @@
 #projects{
     height: 100vh;
-    background-color: green;
+    background-color: white;
+    padding-left: 5vw;
+    h1{
+        margin-bottom: 0;
+        font-family: $header-font;
+        font-size: 3em;
+        padding-left: 2vw;
+    }
+    #project-list{
+        display: flex;
+        overflow-x: auto;
+        width: 95vw;
+        height: 85vh;
+        margin: 0;
+        background-color: $front-end-color;
+        padding-top: 5vh;
+    }
+    .proj-card{
+        width: 900px;
+        height: 73vh;
+        border-radius: 4px;
+        margin: auto 1em;
+        background-color: white;
+        filter: drop-shadow(0 0 0.5em black);
+        img{
+            height: 50%;
+            width: 100%;
+        }
+        h2{
+            padding-left: .5em ;
+        }
+        p{
+            word-wrap: break-word;
+            padding: .5em;
+            font-family: $body-font;
+        }
+        i{
+            padding-left: 1em;
+            color: black;
+            font-size: 2em;
+        }
+    }
 }

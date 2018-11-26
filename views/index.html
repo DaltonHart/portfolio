@@ -14,12 +14,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous" defer></script>
     <script src="vendor/morphist/dist/morphist.min.js" defer></script>
+    <script src="vendor/scrollify.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 </head>
 
 <body>
-    <header class="">
+    <header class="hidden">
         <img src="images/logo.png" alt="logo">
         <nav>
             <ul class="navbar">
@@ -31,7 +32,7 @@
         </nav>
     </header>
     <main id="fullpage">
-        <section id="landing" class="section">
+        <section id="landing" class="section one">
             <div class="fullscreen-video-wrap">
                 <video src="http://localhost:8000/images/typing.mp4" autoPlay="true" loop="true" muted="true">
                 </video>
@@ -60,7 +61,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="section">
+        <section id="about" class="section two">
             <section id="about-main">
                 <h2>Dalton Hart</h2>
                 <h1>SanFransico based Developer focused on web optimization and restful api. Loves to build in new
@@ -100,7 +101,7 @@
                         </ul>
                     </div>
                 </section>
-                <section id="social" >
+                <section id="social">
                     <p>Contect with me!</p>
                     <a href="https://www.linkedin.com/in/dalton-hart/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
@@ -117,8 +118,45 @@
                 </section>
             </section>
         </section>
-        <section id="projects" class="section"></section>
-        <section id="contact" class="section"></section>
+        <section id="projects" class="section three">
+            <h1>Latest Work</h1>
+            <section id="project-list">
+                
+            </section>
+        </section>
+        <section id="contact" class="section four">
+            <section id="contact-block">
+                <section id="contact-info">
+                    <h1>Let's work on your next project together.</h1>
+                    <h2>Contact Info</h2>
+                    <ul>
+                        <li>Email: Daltonhart.j@gmail.com</li>
+                        <a href="https://www.linkedin.com/in/dalton-hart/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/DaltonHart" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Captillfated" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/DaltonJHart" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </ul>
+                </section>
+                <section id="contact-form">
+                    <form>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="number" placeholder="Phone Number">
+                        <textarea name="message" placeholder="Message" rows="4" cols="50"></textarea>
+                        <input id="contact-sub" type="submit" value="SUBMIT">
+                    </form>
+
+                </section>
+            </section>
+        </section>
     </main>
 
 </body>
